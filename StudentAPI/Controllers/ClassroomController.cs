@@ -37,7 +37,7 @@ namespace StudentAPI.Controllers
             return Ok();
         }
         [HttpPost("add-student-to-class")]
-        public IActionResult AddStuToClass(List<Student> students, int classroomId){
+        public IActionResult AddStuToClass(List<int> students, int classroomId){
             _classroomService.AddStudentToClass(students, classroomId);
             return Ok();
         }
